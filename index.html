@@ -517,7 +517,7 @@ footer{background:var(--deeper);border-top:1px solid rgba(255,255,255,.08)}
   <div class="wrap">
     <div class="tb-l"><span>MediBrain</span>신경과학·인지과학 기반 의사결정–실행 구조설계</div>
     <div class="tb-r">
-      <a href="mailto:informlee24@gmail.com?subject=[MediBrain] 상담 신청&body=· 회사명:%0A· 업종:%0A· 인원 규모:%0A· 가장 반복되는 실행 문제:%0A· 연락처:">이메일 문의 →</a>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLScTFQLLnLesXkP1JalSLxuP9lwgVJ3YgGguUOFtcmpzbWR0tQ/viewform" target="_blank" rel="noopener">상담 문의 →</a>
     </div>
   </div>
 </div>
@@ -995,7 +995,7 @@ footer{background:var(--deeper);border-top:1px solid rgba(255,255,255,.08)}
     <h2>우리 회사의 결정은<br><span class="g">어디서 멈추고</span> 있습니까?</h2>
     <p class="cp">회사명·업종·인원 규모·가장 반복되는 실행 문제를 남겨주시면,<br><b>조직 상황에 맞는 진단·개입 조합을 제안드립니다.</b></p>
     <div class="cta-actions">
-      <a href="mailto:informlee24@gmail.com?subject=[MediBrain] 상담 신청&body=· 회사명:%0A· 업종:%0A· 인원 규모:%0A· 가장 반복되는 실행 문제:%0A· 연락처:" class="btn-pri" style="font-size:16px;padding:18px 38px">상담 신청하기 &nbsp;→</a>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLScTFQLLnLesXkP1JalSLxuP9lwgVJ3YgGguUOFtcmpzbWR0tQ/viewform" target="_blank" rel="noopener" class="btn-pri" style="font-size:16px;padding:18px 38px">상담 신청하기 &nbsp;→</a>
     </div>
     <div class="cta-hint">
       <b>· 회사명</b> &nbsp; <b>· 업종</b> &nbsp; <b>· 인원 규모</b> &nbsp; <b>· 가장 반복되는 실행 문제</b> &nbsp; <b>· 연락처</b>
@@ -1013,7 +1013,7 @@ footer{background:var(--deeper);border-top:1px solid rgba(255,255,255,.08)}
         <p class="fbdesc">신경과학·인지과학 기반으로 의사결정과 실행 사이의 간극을 해부하고 다시 잇는 실행 구조설계.</p>
         <div class="fbcontact">
           이지운 대표 · Jiwoon Lee<br>
-          <a href="mailto:informlee24@gmail.com?subject=[MediBrain] 상담 신청">상담 신청하기 →</a>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLScTFQLLnLesXkP1JalSLxuP9lwgVJ3YgGguUOFtcmpzbWR0tQ/viewform" target="_blank" rel="noopener">상담 신청하기 →</a>
         </div>
       </div>
       <div class="foot-col">
@@ -1111,7 +1111,7 @@ footer{background:var(--deeper);border-top:1px solid rgba(255,255,255,.08)}
 <!-- FLOATING BUTTONS -->
 <div class="floaty">
   <button class="float-btn float-top" id="toTop" aria-label="맨 위로">↑</button>
-  <button class="float-btn float-cta" onclick="location.href='#apply'">💬 상담 신청</button>
+  <button class="float-btn float-cta" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLScTFQLLnLesXkP1JalSLxuP9lwgVJ3YgGguUOFtcmpzbWR0tQ/viewform','_blank','noopener')">💬 상담 신청</button>
 </div>
 
 <script>
@@ -1182,7 +1182,7 @@ document.querySelectorAll('.bpi-sbtn').forEach(btn=>btn.addEventListener('click'
 $('bpiNext').addEventListener('click',()=>{if(ans[cur]===null)return;if(cur<QS.length-1){cur++;render();}else showResults();});
 $('bpiBack').addEventListener('click',()=>{if(cur>0){cur--;render();}});
 $('bpiRestart').addEventListener('click',reset);
-$('bpiCtaBtn').addEventListener('click',()=>{closeModal();location.href='#apply';});
+$('bpiCtaBtn').addEventListener('click',()=>{closeModal();window.open('https://docs.google.com/forms/d/e/1FAIpQLScTFQLLnLesXkP1JalSLxuP9lwgVJ3YgGguUOFtcmpzbWR0tQ/viewform','_blank','noopener');});
 
 function scoreBrain(){const s={L:0,R:0,F:0,O:0};QS.slice(0,8).forEach((q,i)=>{s[q.t]+=(ans[i]||3);});const pct={};['L','R','F','O'].forEach(k=>{pct[k]=Math.round(s[k]/10*100);});const top=Object.entries(pct).sort((a,b)=>b[1]-a[1])[0][0];return{pct,top};}
 function scoreCE(){const aAvg=((ans[8]||3)+(ans[10]||3))/2,iVal=(ans[9]||3),rVal=(ans[11]||3),eAvg=((ans[12]||3)+(ans[13]||3))/2;return{type:(aAvg>=iVal?'A':'I')+'-'+(eAvg>=rVal?'E':'R')};}
