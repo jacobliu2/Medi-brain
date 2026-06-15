@@ -276,7 +276,13 @@ section{position:relative}
 .bi::before{content:"→";color:var(--signal);flex:0 0 auto;margin-top:1px}
 .biz-targets{margin-top:18px;padding:14px 16px;background:var(--paper-2);border-radius:9px;font-size:13px;color:var(--muted)}
 .biz-targets b{color:var(--ink);font-weight:700}
-.biz-extra{margin-top:22px;background:var(--paper-2);border:1px solid var(--line);border-radius:14px;padding:24px 28px;display:flex;align-items:center;gap:16px}
+.biz-extra{margin-top:22px;background:var(--paper-2);border:1px solid var(--line);border-radius:14px;padding:24px 28px;display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+.biz-extra-body{flex:1;min-width:240px}
+.biz-extra-tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:11px}
+.biz-extra-tags span{font-size:11.5px;font-weight:600;color:var(--deep);background:var(--signal-soft);border:1px solid var(--line-2);border-radius:7px;padding:4px 10px}
+.biz-extra-cta{flex:0 0 auto;display:inline-flex;align-items:center;gap:6px;background:var(--deep);color:#fff;font-weight:700;font-size:13.5px;padding:12px 20px;border-radius:10px;white-space:nowrap;transition:.18s;box-shadow:0 12px 26px -14px rgba(11,126,114,.5)}
+.biz-extra-cta:hover{background:var(--deeper);transform:translateY(-2px)}
+@media(max-width:640px){.biz-extra{flex-direction:column;align-items:flex-start}.biz-extra-cta{width:100%;justify-content:center}}
 .biz-extra-ic{flex:0 0 auto;font-size:22px}
 .biz-extra-tt{font-size:13px;font-weight:800;color:var(--ink);margin-bottom:4px}
 .biz-extra-dd{font-size:13px;color:var(--muted);line-height:1.65}
@@ -945,10 +951,12 @@ footer{background:var(--deeper);border-top:1px solid rgba(255,255,255,.08)}
     </div>
     <div class="biz-extra rv">
       <div class="biz-extra-ic"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#0B7E72" stroke-width="1.8" stroke-linecap="round"><path d="M9 12.5h6"/><path d="M8.5 8.5a4 4 0 0 0 0 8h1.5"/><path d="M15.5 16.5a4 4 0 0 0 0-8H14"/></svg></div>
-      <div>
-        <div class="biz-extra-tt">BrainTONG — 공동 운영 브랜드</div>
-        <div class="biz-extra-dd">MediBrain × 경영전환전략 연구소(TONG) 통합 브랜드. 매출은 있는데 성장이 멈춘 100인 이하 기업을 위한 인지경영 × 경영전환 통합 진단 플랫폼.</div>
+      <div class="biz-extra-body">
+        <div class="biz-extra-tt">BrainTONG — MediBrain 공동 운영 브랜드</div>
+        <div class="biz-extra-dd">MediBrain의 <b>인지경영</b>(인지과학 기반 의사결정·실행 구조설계)과 경영전환전략 연구소(TONG)의 <b>경영전환</b> 방법론을 결합한 공동 운영 브랜드입니다. 매출은 있지만 성장이 정체된 <b>100인 이하 중소기업</b>을 위해, 인지경영 × 경영전환을 하나의 진단·실행 체계로 통합해 제공합니다.</div>
+        <div class="biz-extra-tags"><span>100인 이하 중소기업</span><span>인지경영 × 경영전환</span><span>통합 진단·실행</span></div>
       </div>
+      <a class="biz-extra-cta" href="https://www.brain-tong.com" target="_blank" rel="noopener">BrainTONG 홈페이지 →</a>
     </div>
   </div>
 </section>
