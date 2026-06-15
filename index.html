@@ -514,6 +514,65 @@ footer{background:var(--deeper);border-top:1px solid rgba(255,255,255,.08)}
 @keyframes nfD{0%,100%{opacity:1}10%{opacity:.4}13%{opacity:1}38%{opacity:.3}41%{opacity:1}72%{opacity:.6}}
 .nf-br{fill:#F4FFFC}
 
+
+/* ===== merged content: empathy / how / cases / bpi profiles ===== */
+.emp-g{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.emp-item{background:#fff;border:1px solid var(--line);border-radius:16px;padding:30px 26px;transition:.2s}
+.emp-item:hover{border-color:var(--signal);box-shadow:0 22px 46px -30px rgba(15,181,160,.45);transform:translateY(-3px)}
+.emp-n{font-size:13px;font-weight:800;color:var(--signal);letter-spacing:.08em;margin-bottom:14px}
+.emp-t{font-size:19px;font-weight:800;color:var(--ink);line-height:1.35;letter-spacing:-.02em;margin-bottom:12px}
+.emp-d{font-size:13.5px;color:var(--muted);line-height:1.72}
+
+.how-steps{display:flex;flex-direction:column;gap:16px;margin-top:46px;max-width:860px}
+.how-step{display:flex;gap:20px;background:#fff;border:1px solid var(--line);border-radius:16px;padding:26px 28px}
+.how-n2{flex:0 0 44px;width:44px;height:44px;border-radius:12px;background:var(--signal-soft);color:var(--deep);font-weight:800;font-size:18px;display:flex;align-items:center;justify-content:center}
+.how-step:last-child .how-n2{background:var(--deep);color:#fff}
+.how-t2{font-size:16.5px;font-weight:800;color:var(--ink);margin-bottom:6px}
+.how-d2{font-size:13.5px;color:var(--muted);line-height:1.65}
+.how-note{font-size:12.5px;color:var(--deep);background:var(--paper-2);border:1px solid var(--line-2);border-radius:8px;padding:10px 13px;margin-top:11px;line-height:1.6}
+
+.res-strip{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;max-width:880px;margin:46px auto 30px}
+.res-s{background:#fff;border:1px solid var(--line);border-radius:14px;padding:22px;text-align:center}
+.res-s .f{font-size:13px;color:var(--muted-2,#9AAABB);text-decoration:line-through}
+.res-s .t{font-size:27px;font-weight:800;color:var(--signal);margin:3px 0 9px;font-feature-settings:"tnum"}
+.res-s .l{font-size:11.5px;color:var(--muted);line-height:1.55}
+.case-card2{background:#fff;border:1px solid var(--line);border-radius:18px;overflow:hidden;margin-bottom:22px;box-shadow:0 22px 54px -40px rgba(14,27,46,.45)}
+.case-hdr2{padding:24px 30px;color:#fff}
+.case-hdr2.c1{background:var(--ink)}.case-hdr2.c2{background:var(--deep)}.case-hdr2.c3{background:var(--deeper)}
+.case-badge2{display:inline-block;font-size:11px;font-weight:800;letter-spacing:.05em;padding:4px 12px;border-radius:999px;background:rgba(255,255,255,.16);margin-bottom:12px}
+.case-hl2{font-size:clamp(16px,2.1vw,21px);font-weight:800;letter-spacing:-.02em;line-height:1.42}
+.case-bd2{display:grid;grid-template-columns:1fr 1fr;gap:32px;padding:30px}
+.case-role{font-size:12px;font-weight:700;color:var(--deep);margin-bottom:8px}
+.case-intro2{font-size:13.5px;color:var(--ink-2);line-height:1.78;margin-bottom:16px}
+.case-iss2{font-size:13px;color:var(--muted);line-height:1.72;background:var(--paper-2);border-left:3px solid var(--signal);border-radius:0 10px 10px 0;padding:14px 16px}
+.case-iss2 strong{color:var(--ink);font-weight:800}
+.case-proc-t2{font-size:12px;font-weight:800;color:var(--ink);letter-spacing:.04em;margin-bottom:13px}
+.case-sess2{display:flex;flex-direction:column;gap:9px;margin-bottom:18px}
+.case-s2{display:flex;gap:11px;font-size:12.5px;color:var(--muted);line-height:1.5}
+.case-s2 b{flex:0 0 28px;font-weight:800;color:var(--deep)}
+.case-nums2{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.cn2{border:1px solid var(--line);border-radius:10px;padding:11px 13px}
+.cn2.tl{background:var(--signal-soft);border-color:var(--line-2)}
+.cn2-l{font-size:11px;color:var(--muted);margin-bottom:3px}
+.cn2-v{font-size:14px;font-weight:800;color:var(--ink)}
+.cn2.tl .cn2-v{color:var(--deep)}
+.case-quote2{margin-top:10px;padding:12px 15px;background:var(--signal-soft);border:1px solid var(--line-2);border-radius:8px;font-size:13px;font-weight:700;color:var(--deep)}
+.case-disc{font-size:11.5px;color:var(--muted);margin-top:18px;line-height:1.7}
+
+.bpi-profiles{display:flex;flex-direction:column;gap:10px;margin:22px 0}
+.bpi-prof{display:flex;gap:13px;align-items:flex-start;background:rgba(255,255,255,.06);border:1px solid var(--line-dark);border-radius:12px;padding:14px 16px}
+.bpi-prof .pic{flex:0 0 auto;color:var(--signal-bright)}
+.bpi-prof .pn{font-size:13.5px;font-weight:800;color:#fff;margin-bottom:3px}
+.bpi-prof .pd{font-size:11.5px;color:var(--muted-d);line-height:1.55}
+.bpi-connect{margin-top:18px;background:rgba(255,255,255,.06);border:1px solid var(--line-dark);border-radius:12px;padding:18px}
+.bpi-connect .ct{font-size:12px;font-weight:800;color:var(--signal-bright);margin-bottom:6px}
+.bpi-connect .cq{font-size:14px;font-weight:700;color:#fff;margin-bottom:10px}
+.bpi-connect .cb{font-size:12.5px;color:var(--muted-d);line-height:1.7}
+.bpi-connect .cb b{color:#fff}
+
+@media(max-width:760px){.emp-g{grid-template-columns:1fr}.res-strip{grid-template-columns:1fr}.case-bd2{grid-template-columns:1fr;gap:22px}}
+@media(max-width:560px){.how-step{flex-direction:column;gap:12px}}
+
 </style>
 </head>
 <body>
@@ -523,7 +582,7 @@ footer{background:var(--deeper);border-top:1px solid rgba(255,255,255,.08)}
   <div class="wrap">
     <div class="tb-l"><span>MediBrain</span>신경과학·인지과학 기반 의사결정–실행 구조설계</div>
     <div class="tb-r">
-      <a href="https://docs.google.com/forms/d/e/1FAIpQLScTFQLLnLesXkP1JalSLxuP9lwgVJ3YgGguUOFtcmpzbWR0tQ/viewform" target="_blank" rel="noopener">상담 문의 →</a>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLScTFQLLnLesXkP1JalSLxuP9lwgVJ3YgGguUOFtcmpzbWR0tQ/viewform" target="_blank" rel="noopener">상담 문의하기 →</a>
     </div>
   </div>
 </div>
@@ -559,7 +618,7 @@ footer{background:var(--deeper);border-top:1px solid rgba(255,255,255,.08)}
       <a href="#business">사업영역</a>
       <a href="#bpi">자가진단</a>
       <a href="#profile">대표 소개</a>
-      <a href="#apply" class="menu-cta">상담 시작하기 →</a>
+      <a href="#apply" class="menu-cta">상담 문의하기 →</a>
     </nav>
     <button class="ham" id="ham" aria-label="메뉴">
       <svg width="22" height="22" viewBox="0 0 22 22" fill="currentColor"><rect y="4" width="22" height="2.2" rx="1.1"/><rect y="10" width="22" height="2.2" rx="1.1"/><rect y="16" width="22" height="2.2" rx="1.1"/></svg>
@@ -573,7 +632,7 @@ footer{background:var(--deeper);border-top:1px solid rgba(255,255,255,.08)}
     <a href="#business" onclick="closeMob()">사업영역</a>
     <a href="#bpi" onclick="closeMob()">BPI 자가진단</a>
     <a href="#profile" onclick="closeMob()">대표 소개</a>
-    <a href="#apply" class="m-cta" onclick="closeMob()">상담 시작하기 →</a>
+    <a href="#apply" class="m-cta" onclick="closeMob()">상담 문의하기 →</a>
   </nav>
 </header>
 
@@ -643,7 +702,7 @@ footer{background:var(--deeper);border-top:1px solid rgba(255,255,255,.08)}
       <a class="ql" href="#diagnosis"><span class="ic">◎</span><span class="tt">문제 진단</span><span class="dd">결정이 멈추는 구조적 이유</span><span class="arr">보러가기 →</span></a>
       <a class="ql" href="#program"><span class="ic">▤</span><span class="tt">프로그램</span><span class="dd">특강 · 컨설팅 · 코칭</span><span class="arr">보러가기 →</span></a>
       <a class="ql" href="#business"><span class="ic">◇</span><span class="tt">사업 영역</span><span class="dd">기업·기관 · 병원·의료</span><span class="arr">보러가기 →</span></a>
-      <a class="ql" href="#apply"><span class="ic">✉</span><span class="tt">상담 신청</span><span class="dd">조직 맞춤 구조 제안</span><span class="arr">신청하기 →</span></a>
+      <a class="ql" href="#apply"><span class="ic">✉</span><span class="tt">상담 문의하기</span><span class="dd">조직 맞춤 구조 제안</span><span class="arr">바로가기 →</span></a>
     </div>
   </div>
 </div>
@@ -683,6 +742,17 @@ footer{background:var(--deeper);border-top:1px solid rgba(255,255,255,.08)}
           <div class="deg-label">System<span>실행 구조 고정 · 성과 연결</span></div>
         </div>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- EMPATHY -->
+<section class="sec-pad" style="background:var(--paper-2)" id="empathy">
+  <div class="wrap">
+    <div class="emp-g rv">
+      <div class="emp-item"><div class="emp-n">01</div><div class="emp-t">왜 열심히 해도<br>결과가 안 나올까요?</div><div class="emp-d">사람 탓이 아닙니다. 결정이 내려진 뒤 실행으로 이어지는 구조가 없기 때문입니다. 뇌과학으로 정확히 진단됩니다.</div></div>
+      <div class="emp-item"><div class="emp-n">02</div><div class="emp-t">특강 한 번이면<br>달라질 수 있을까요?</div><div class="emp-d">동기부여는 3주면 사라집니다. 특강으로 문제를 공유하고, 코칭으로 구조를 바꿔야 조직이 움직입니다.</div></div>
+      <div class="emp-item"><div class="emp-n">03</div><div class="emp-t">우리 조직에도<br>적용할 수 있을까요?</div><div class="emp-d">병원·기업·개인 창업자 모두에서 적용됐습니다. 중요한 건 규모가 아니라 패턴입니다. 패턴이 보이면 구조가 바뀝니다.</div></div>
     </div>
   </div>
 </section>
@@ -842,6 +912,22 @@ footer{background:var(--deeper);border-top:1px solid rgba(255,255,255,.08)}
   </div>
 </section>
 
+<!-- HOW IT WORKS -->
+<section class="sec-pad" style="background:var(--paper)" id="how">
+  <div class="wrap">
+    <div class="rv">
+      <div class="eyebrow">// How It Works</div>
+      <h2 class="h2">어떻게 <span class="alt">진행</span>되나요?</h2>
+      <p class="sub">복잡하지 않습니다. 지금 상황만 말씀해 주시면 됩니다.</p>
+    </div>
+    <div class="how-steps rv">
+      <div class="how-step"><div class="how-n2">1</div><div><div class="how-t2">조직 현황 파악 세션 (30분)</div><div class="how-d2">전화 또는 온라인으로 진행합니다. 특강이 필요한지, 코칭이 필요한지 함께 결정합니다.</div><div class="how-note">→ 세션 전 BPI™ 자가진단(5분) 링크를 미리 발송합니다. 두뇌사용유형·인지-정서 프로파일링·리더십유형을 사전 파악해 세션이 더 정확해집니다.</div></div></div>
+      <div class="how-step"><div class="how-n2">2</div><div><div class="how-t2">특강 (90분)</div><div class="how-d2">팀 전체가 D-E GAP™(의사결정과 실행 사이의 간극 재설계) 문제를 같은 언어로 인식합니다.</div><div class="how-note">→ 특강 후 1주일 이내 F/UP 세션이 포함됩니다.</div></div></div>
+      <div class="how-step"><div class="how-n2">3</div><div><div class="how-t2">1:1 코칭 (리더 맞춤)</div><div class="how-d2">BPI™ 패턴 분석을 토대로 의사결정 루프와 실행 구조를 맞춤 설계합니다. 특강 이후 심화 과정, 또는 임원 단독으로 바로 시작할 수도 있습니다.</div><div class="how-note">→ 이 단계에서 조직의 실행 구조가 완성됩니다.</div></div></div>
+    </div>
+  </div>
+</section>
+
 <!-- KPI -->
 <section class="kpi-section sec-pad" id="kpi">
   <div class="wrap">
@@ -864,6 +950,24 @@ footer{background:var(--deeper);border-top:1px solid rgba(255,255,255,.08)}
         <div class="case-item"><div class="cv"><del>58점</del> → <strong>82점</strong></div><div class="cd">팀 실행 만족도 점수<br>중간관리자 판단 안정화 후 측정</div></div>
       </div>
     </div>
+  </div>
+</section>
+
+<!-- CASE STUDIES -->
+<section class="sec-pad" style="background:var(--paper-2)" id="cases">
+  <div class="wrap">
+    <div class="rv">
+      <div class="eyebrow">// Case Studies</div>
+      <h2 class="h2">병원, 기업, 개인.<br><span class="alt">현장은 달랐지만 막힌 구간은 같았습니다.</span></h2>
+      <p class="sub">결정과 실행 사이, 구조가 없었던 겁니다.</p>
+    </div>
+    <div class="res-strip rv">
+      <div class="res-s"><div class="f">월 30시간</div><div class="t">14시간</div><div class="l">서울 ○○성형외과 · CS·분쟁 회의 시간 (6개월 후)</div></div>
+      <div class="res-s"><div class="f">월 15회</div><div class="t">9회</div><div class="l">서울 ○○피부과 · 병원장 직접 개입 (3개월 후)</div></div>
+      <div class="res-s"><div class="f">58점</div><div class="t">82점</div><div class="l">팀 실행 만족도 · 중간관리자 판단 안정화 후</div></div>
+    </div>
+    <div class="case-card2 rv"><div class="case-hdr2 c1"><div class="case-badge2">CASE 01 · 병원</div><div class="case-hl2">"열심히 하는데 왜 결과가 안 나올까요"</div></div><div class="case-bd2"><div><div class="case-role">성형외과 원장 + 실장</div><p class="case-intro2">부산의 한 성형외과. 원장은 시술에 집중하고 실장은 매출을 맡았습니다. 둘 다 열심히 했습니다. 그런데 회의는 끝나도 끝난 게 아니었습니다. 같은 안건이 다음 회의에 또 올라왔습니다. 평균 회의 시간 95분. 팀이 지쳐갔고, 직원 이탈이 시작됐습니다.</p><div class="case-iss2"><strong>본질적인 문제</strong><br>두 리더가 서로 다른 의사결정 회로로 움직이고 있었습니다. 원장은 완성도 기반, 실장은 속도 기반. 같은 상황을 다르게 읽으니 결정이 날 수가 없었습니다.</div></div><div><div class="case-proc-t2">코칭 과정 (4주, 총 6회)</div><div class="case-sess2"><div class="case-s2"><b>1회</b>두 사람의 판단 회로 각각 분석</div><div class="case-s2"><b>2회</b>반복 갈등 상황 3가지 해부 — "의견 차이"가 아닌 "회로 충돌"임을 확인</div><div class="case-s2"><b>3회</b>결정 권한 구조 설계. 원장 결정 vs 실장 결정 분리</div><div class="case-s2"><b>4회</b>회의 프로세스 표준화 — 안건→결정→담당자→기한 4단계</div><div class="case-s2"><b>5회</b>실전 회의 동행 피드백</div><div class="case-s2"><b>6회</b>결과 점검 및 유지 구조 확정</div></div><div class="case-nums2"><div class="cn2"><div class="cn2-l">회의 시간</div><div class="cn2-v">95분 → 58분</div></div><div class="cn2"><div class="cn2-l">월 갈등 건수</div><div class="cn2-v">5건 → 1건</div></div><div class="cn2 tl"><div class="cn2-l">상담-시술 전환율</div><div class="cn2-v">52% → 74%</div></div><div class="cn2 tl"><div class="cn2-l">직원 만족도</div><div class="cn2-v">61점 → 87점</div></div></div></div></div></div><div class="case-card2 rv"><div class="case-hdr2 c2"><div class="case-badge2">CASE 02 · 기업</div><div class="case-hl2">"지시는 했습니다. 근데 2주 후에 현장은 그대로였습니다"</div></div><div class="case-bd2"><div><div class="case-role">45인 제조기업 팀장 K씨</div><p class="case-intro2">매주 회의를 열었습니다. 역할 배분도, 마감 기한도 다 정했습니다. 그런데 금요일에 확인하면 절반이 흐지부지됐습니다. 면담도 했습니다. 인센티브도 걸었습니다. 달라지지 않았습니다. "내가 리더 자질이 없는 건지"라는 말을 꺼냈습니다.</p><div class="case-iss2"><strong>본질적인 문제</strong><br>결정 이후의 구조가 없었습니다. "하자"는 말은 나왔지만, 누가 어떤 기준으로 판단하며 실행하는지가 빠져 있었습니다. 실행 기준이 모호할 때 뇌는 자동으로 회피 모드로 전환됩니다.</div></div><div><div class="case-proc-t2">코칭 과정 (4주, 총 5회)</div><div class="case-sess2"><div class="case-s2"><b>1회</b>BPI 진단 — "완벽 확인형" 패턴. 본인은 명확하다 인식하지만 팀원에겐 모호하게 전달</div><div class="case-s2"><b>2회</b>실행 실패 사례 3개 해부 — "하세요"와 "이렇게 하세요"의 차이</div><div class="case-s2"><b>3회</b>팀원이 스스로 판단할 수 있는 실행 기준표 설계</div><div class="case-s2"><b>4회</b>회의 구조 재설계 — 결정→실행자→체크포인트→완료 기준 4단계</div><div class="case-s2"><b>5회</b>결과 점검 및 유지 구조 확정</div></div><div class="case-nums2"><div class="cn2"><div class="cn2-l">실행 완료율</div><div class="cn2-v">48% → 79%</div></div><div class="cn2"><div class="cn2-l">주간 회의 시간</div><div class="cn2-v">75분 → 40분</div></div><div class="cn2 tl"><div class="cn2-l">확인 연락</div><div class="cn2-v">주 12회 → 3회</div></div><div class="cn2 tl"><div class="cn2-l">현장 변화</div><div class="cn2-v">"확인 전화 불필요"</div></div></div></div></div></div><div class="case-card2 rv"><div class="case-hdr2 c3"><div class="case-badge2">CASE 03 · 개인</div><div class="case-hl2">"방향은 있는데, 왜 매일 제자리인지 모르겠습니다"</div></div><div class="case-bd2"><div><div class="case-role">병원 코디네이터 출신 창업 준비자 J씨</div><p class="case-intro2">병원에서 12년 경력을 쌓은 코디네이터. 사업계획서도 썼고, SNS 계정도 만들었습니다. 그런데 6개월째 아무것도 올라가지 않았습니다. "의지가 없는 건 아닌데, 시작하려고 하면 멈춰집니다"</p><div class="case-iss2"><strong>본질적인 문제</strong><br>뇌 패턴과 실행 순서가 맞지 않았습니다. 전체 그림이 완성돼야 움직이는 유형인데, "일단 올려보세요"라는 방식으로 6개월을 버텼습니다. 의지의 문제가 아니라 실행 설계의 문제였습니다.</div></div><div><div class="case-proc-t2">코칭 과정 (4주, 총 5회)</div><div class="case-sess2"><div class="case-s2"><b>1회</b>BPI 진단 — "구조 완성형" 유형. 불완전한 상태 노출에 뇌가 저항하는 패턴</div><div class="case-s2"><b>2회</b>6개월간 멈춘 이유 — "완성 안 된 것을 올리는 것"이 회피 트리거였음</div><div class="case-s2"><b>3회</b>실행 순서 재설계 — 구조→네이밍→1개 완성→공개 순서로 변경</div><div class="case-s2"><b>4회</b>브랜드 포지셔닝 확정 + 첫 콘텐츠 1개 완성 동행</div><div class="case-s2"><b>5회</b>결과 점검 + 6개월 실행 로드맵 확정</div></div><div class="case-nums2"><div class="cn2"><div class="cn2-l">실행 계획 달성률</div><div class="cn2-v">54% → 87%</div></div><div class="cn2"><div class="cn2-l">초기 고객 상담</div><div class="cn2-v">6건 성사</div></div><div class="cn2 tl"><div class="cn2-l">4주 내 완성</div><div class="cn2-v">브랜드·SNS·홈페이지 구조</div></div><div class="cn2 tl"><div class="cn2-l">현장 변화</div><div class="cn2-v">"하고 있다는 느낌"</div></div></div><div class="case-quote2">"처음으로 '하고 있다'는 느낌이 납니다"</div></div></div></div>
+    <p class="case-disc">* 위 사례는 실제 코칭 현장의 패턴을 바탕으로 재구성한 내용입니다. 기관명 및 개인 정보는 포함되어 있지 않습니다.</p>
   </div>
 </section>
 
@@ -894,6 +998,11 @@ footer{background:var(--deeper);border-top:1px solid rgba(255,255,255,.08)}
         <div class="eyebrow">// FREE DIAGNOSTIC · BPI™</div>
         <h2>3분 만에 확인하는<br><span>나의 두뇌 실행 패턴</span></h2>
         <p>BPI™(Brain Pattern Index)는 NECX™와 함께 작동하는 진단 도구입니다. 22문항으로 두뇌사용유형 · 인지·정서 패턴 · 리더십 유형 세 가지 프로파일을 즉시 확인하세요. 결과는 1:1 코칭·구조 설계의 출발점이 됩니다.</p>
+        <div class="bpi-profiles">
+          <div class="bpi-prof"><svg class="pic" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#5BE9D6" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="2.4"/><circle cx="5.5" cy="7" r="1.4"/><circle cx="18.5" cy="7" r="1.4"/><circle cx="5.5" cy="17" r="1.4"/><circle cx="18.5" cy="17" r="1.4"/><path d="M7 8l3.2 3.2M17 8l-3.2 3.2M7 16l3.2-3.2M17 16l-3.2-3.2"/></svg><div><div class="pn">두뇌사용유형</div><div class="pd">뇌를 사용하는 방식이 다릅니다 — 나의 두뇌는 어디에 강한가?</div></div></div>
+          <div class="bpi-prof"><svg class="pic" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#5BE9D6" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 18.5h5"/><path d="M10 21h4"/><path d="M12 3a6 6 0 0 0-3.8 10.6c.7.6 1.1 1.3 1.2 2.4h5.2c.1-1.1.5-1.8 1.2-2.4A6 6 0 0 0 12 3z"/></svg><div><div class="pn">인지-정서 프로파일링</div><div class="pd">의사결정할 때 감정과 인지가 어떻게 작동하는지 — D-E GAP™ 진단의 기초 데이터</div></div></div>
+          <div class="bpi-prof"><svg class="pic" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#5BE9D6" stroke-width="1.7"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r="1" fill="#5BE9D6"/></svg><div><div class="pn">리더십유형</div><div class="pd">조직에서 나타나는 나의 리더십 패턴 — 코칭·구조설계의 출발점</div></div></div>
+        </div>
         <div class="bpi-meta">
           <span>약 3분</span><span>22문항</span><span>3개 프로파일</span><span>즉시 결과</span>
         </div>
@@ -904,6 +1013,11 @@ footer{background:var(--deeper);border-top:1px solid rgba(255,255,255,.08)}
         <div class="tc-p">역할(개인·관리자·경영진)에 맞춰 분석합니다. 가입·로그인 없이 바로 진행됩니다.</div>
         <button class="bpi-open-btn js-bpi-open">무료 BPI 자가진단 시작 &nbsp;→</button>
         <span class="bpi-free">* 입문 진단입니다. 정밀 진단은 NECX™ 컨설팅에서 진행됩니다.</span>
+        <div class="bpi-connect">
+          <div class="ct">▶ 진단 결과를 보면 이렇게 연결됩니다</div>
+          <div class="cq">결과를 보고 떠오르는 사람이 있으신가요?</div>
+          <div class="cb"><b>팀장 · 임원이 떠오른다면</b> 팀 전체가 같은 문제를 인식하는 특강이 가장 빠른 시작입니다.<br><br><b>나 자신이 떠오른다면</b> 내 판단 패턴을 재설계하는 1:1 코칭으로 연결합니다.</div>
+        </div>
       </div>
     </div>
   </div>
@@ -1003,7 +1117,7 @@ footer{background:var(--deeper);border-top:1px solid rgba(255,255,255,.08)}
     <h2>우리 회사의 결정은<br><span class="g">어디서 멈추고</span> 있습니까?</h2>
     <p class="cp">회사명·업종·인원 규모·가장 반복되는 실행 문제를 남겨주시면,<br><b>조직 상황에 맞는 진단·개입 조합을 제안드립니다.</b></p>
     <div class="cta-actions">
-      <a href="https://docs.google.com/forms/d/e/1FAIpQLScTFQLLnLesXkP1JalSLxuP9lwgVJ3YgGguUOFtcmpzbWR0tQ/viewform" target="_blank" rel="noopener" class="btn-pri" style="font-size:16px;padding:18px 38px">상담 신청하기 &nbsp;→</a>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLScTFQLLnLesXkP1JalSLxuP9lwgVJ3YgGguUOFtcmpzbWR0tQ/viewform" target="_blank" rel="noopener" class="btn-pri" style="font-size:16px;padding:18px 38px">상담 문의하기 &nbsp;→</a>
     </div>
     <div class="cta-hint">
       <b>· 회사명</b> &nbsp; <b>· 업종</b> &nbsp; <b>· 인원 규모</b> &nbsp; <b>· 가장 반복되는 실행 문제</b> &nbsp; <b>· 연락처</b>
@@ -1021,7 +1135,7 @@ footer{background:var(--deeper);border-top:1px solid rgba(255,255,255,.08)}
         <p class="fbdesc">신경과학·인지과학 기반으로 의사결정과 실행 사이의 간극을 해부하고 다시 잇는 실행 구조설계.</p>
         <div class="fbcontact">
           이지운 대표 · Jiwoon Lee<br>
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLScTFQLLnLesXkP1JalSLxuP9lwgVJ3YgGguUOFtcmpzbWR0tQ/viewform" target="_blank" rel="noopener">상담 신청하기 →</a>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLScTFQLLnLesXkP1JalSLxuP9lwgVJ3YgGguUOFtcmpzbWR0tQ/viewform" target="_blank" rel="noopener">상담 문의하기 →</a>
         </div>
       </div>
       <div class="foot-col">
@@ -1048,7 +1162,7 @@ footer{background:var(--deeper);border-top:1px solid rgba(255,255,255,.08)}
         <div class="fli">DEG Diagnostic™</div>
         <div class="fli">DEG Score™</div>
         <div class="fli">D-E GAP™ 3-Layer System</div>
-        <a href="#apply" style="color:var(--signal-bright);font-weight:700;margin-top:8px;display:block">상담 신청 →</a>
+        <a href="#apply" style="color:var(--signal-bright);font-weight:700;margin-top:8px;display:block">상담 문의하기 →</a>
       </div>
     </div>
     <div class="foot-bottom">
@@ -1109,7 +1223,7 @@ footer{background:var(--deeper);border-top:1px solid rgba(255,255,255,.08)}
         <div class="line"></div>
         <div class="ch">더 깊이 들여다보고 싶으신가요?</div>
         <div class="cp" id="bpiCtaP">이 결과는 입문 진단입니다.</div>
-        <button class="bpi-cta-btn" id="bpiCtaBtn">NECX™ 정밀 진단·상담 신청 →</button>
+        <button class="bpi-cta-btn" id="bpiCtaBtn">NECX™ 정밀 진단·상담 문의하기 →</button>
       </div>
       <button class="bpi-start bpi-restart" id="bpiRestart">처음부터 다시 진단하기</button>
     </div>
@@ -1119,7 +1233,7 @@ footer{background:var(--deeper);border-top:1px solid rgba(255,255,255,.08)}
 <!-- FLOATING BUTTONS -->
 <div class="floaty">
   <button class="float-btn float-top" id="toTop" aria-label="맨 위로">↑</button>
-  <button class="float-btn float-cta" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLScTFQLLnLesXkP1JalSLxuP9lwgVJ3YgGguUOFtcmpzbWR0tQ/viewform','_blank','noopener')">💬 상담 신청</button>
+  <button class="float-btn float-cta" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLScTFQLLnLesXkP1JalSLxuP9lwgVJ3YgGguUOFtcmpzbWR0tQ/viewform','_blank','noopener')">💬 상담 문의하기</button>
 </div>
 
 <script>
