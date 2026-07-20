@@ -706,6 +706,152 @@
     .bpi-widget{padding:22px 17px;}
   }
 </style>
+
+<style id="medibrain-production-fullwidth">
+  :root{--content-width:1280px;}
+  html,body{width:100%;min-width:0;overflow-x:hidden;}
+  body{
+    margin:0;
+    background:#FFFFFF;
+  }
+  body::before{display:none!important;}
+
+  .page{
+    width:100%;
+    max-width:none;
+    margin:0;
+    border:0;
+    border-radius:0;
+    box-shadow:none;
+    overflow:visible;
+    background:#FFFFFF;
+  }
+
+  section,
+  .masthead{
+    padding-left:max(32px,calc((100vw - var(--content-width))/2));
+    padding-right:max(32px,calc((100vw - var(--content-width))/2));
+  }
+
+  .masthead{
+    min-height:78px;
+    border-bottom:1px solid rgba(216,234,229,.92);
+    box-shadow:0 5px 22px rgba(6,72,63,.04);
+  }
+
+  .hero{
+    min-height:660px;
+    grid-template-columns:minmax(0,1.08fr) minmax(400px,.72fr);
+    column-gap:clamp(54px,5vw,96px);
+    align-items:center;
+    padding-top:88px;
+    padding-bottom:92px;
+    background:
+      radial-gradient(circle at 82% 22%,rgba(24,185,149,.13),transparent 26rem),
+      linear-gradient(125deg,#FFFFFF 0%,#FBFFFE 54%,#ECFAF6 100%);
+  }
+  .hero::before{
+    width:620px;
+    height:620px;
+    right:-250px;
+    top:-290px;
+    opacity:.68;
+  }
+  .position-badge{
+    justify-self:start;
+    width:auto;
+    max-width:max-content;
+    margin-bottom:24px;
+    padding:8px 14px;
+    border-radius:999px;
+    white-space:nowrap;
+  }
+  .headline{
+    max-width:760px;
+    font-size:clamp(52px,4.25vw,76px);
+    line-height:1.08;
+    letter-spacing:-.055em;
+    word-break:keep-all;
+    overflow-wrap:normal;
+  }
+  .lede{
+    max-width:700px;
+    margin-top:30px;
+    font-size:16.5px;
+    line-height:1.84;
+    word-break:keep-all;
+  }
+  .lede p{margin-bottom:15px;}
+  .pillars{
+    max-width:780px;
+    margin-top:36px;
+    gap:14px;
+  }
+  .pillar{
+    min-height:112px;
+    padding:20px 19px;
+  }
+  .pillar .pt{font-size:15px;}
+  .pillar .pd{font-size:12px;}
+
+  .hero-signal{
+    width:100%;
+    max-width:500px;
+    justify-self:end;
+    padding:28px;
+    border-radius:28px;
+    box-shadow:0 26px 70px rgba(8,123,107,.13);
+  }
+  .signal-visual{height:240px;margin:22px 0;}
+  .signal-copy strong{font-size:14px;}
+  .signal-copy span{font-size:12.5px;}
+
+  .stance{padding-top:34px;padding-bottom:34px;}
+  .stance-row{align-items:center;}
+
+  .objections,.origin,.rx,.degflow,.fw,.problems,.approach,.stats,.cases,.programs,.bpi,.biz,.founder{
+    padding-top:88px;
+    padding-bottom:88px;
+  }
+  .closing{
+    padding:84px max(32px,calc((100vw - var(--content-width))/2));
+  }
+
+  .origin-body{max-width:none;}
+  .cases-lede{max-width:760px;}
+  .case-issue{max-width:none;}
+  .bpi-intro{max-width:760px;}
+
+  @media(max-width:1100px){
+    :root{--content-width:960px;}
+    .hero{grid-template-columns:minmax(0,1fr) minmax(340px,.72fr);column-gap:40px;}
+    .headline{font-size:clamp(46px,5.6vw,64px);}
+    .pillars{grid-template-columns:1fr;max-width:620px;}
+    .pillar{min-height:auto;}
+  }
+
+  @media(max-width:920px){
+    section,.masthead{padding-left:24px;padding-right:24px;}
+    .hero{min-height:auto;grid-template-columns:1fr;padding-top:68px;padding-bottom:72px;}
+    .hero-signal{grid-column:1;grid-row:auto;justify-self:start;max-width:680px;margin-top:36px;}
+    .headline{max-width:700px;}
+    .pillars{max-width:none;grid-template-columns:repeat(3,1fr);}
+  }
+
+  @media(max-width:640px){
+    section,.masthead{padding-left:18px;padding-right:18px;}
+    .masthead{min-height:68px;}
+    .hero{padding-top:48px;padding-bottom:54px;}
+    .position-badge{font-size:9px;white-space:normal;line-height:1.4;}
+    .headline{font-size:42px;line-height:1.12;}
+    .lede{font-size:15px;line-height:1.78;}
+    .pillars{grid-template-columns:1fr;}
+    .signal-visual{height:175px;}
+    .objections,.origin,.rx,.degflow,.fw,.problems,.approach,.stats,.cases,.programs,.bpi,.biz,.founder{padding-top:62px;padding-bottom:62px;}
+    .closing{padding:64px 18px;}
+  }
+</style>
+
 </head>
 <body>
 <noscript><div style="padding:12px 18px;background:#FFF4D6;color:#5D4A10;text-align:center;font-family:Pretendard,sans-serif;">BPI 자가진단 기능을 사용하려면 브라우저에서 JavaScript를 허용해 주세요.</div></noscript>
@@ -751,7 +897,7 @@
 </header>
 <section class="hero" id="about">
 <div class="position-badge">Organizational Diagnosis &amp; Execution Architect</div>
-<h1 class="headline">저는 조직의 <span class="mint-text">처방전</span>을 쓰는 사람입니다.</h1>
+<h1 class="headline">저는 조직의 <span class="mint-text">처방전</span>을<br>쓰는 사람입니다.</h1>
 <div class="lede">
 <p>대부분의 조직은 실행이 멈추면 사람을 바꾸려 합니다.</p>
 <p>저는 다르게 봅니다. 문제는 사람이 아니라<br><span class="mint-strong">의사결정과 실행을 연결하는 구조</span>에 있습니다.</p>
